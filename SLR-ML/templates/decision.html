@@ -1,0 +1,18 @@
+<html>
+    <head> 
+        <title>prediction1</title>
+    </head>
+        <body>
+             <h2><a href = '/'> <p style="text-align:center;">Energy management</p></a></h2>
+             <h2>Results:</h2>
+             {% if prediction == 1%}
+             <h2 style="color: blue;">maintain same state </h2>
+             {% elif prediction == 2%}
+             <h2 style="color:red;">Redirect to battery</h2>
+             {% elif prediction == 3%}
+             <h2 style="color: blue;">redirect to Grid </h2>
+             {% elif prediction == 4%}
+             <h2 style="color: blue;">message consumer </h2>
+             {% endif %}
+        </body>
+</html>
